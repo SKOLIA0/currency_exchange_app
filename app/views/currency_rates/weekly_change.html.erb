@@ -1,0 +1,26 @@
+<h1>Weekly Currency Rate Changes</h1>
+
+<% @currency_changes.each do |currency, changes| %>
+  <h2><%= currency %></h2>
+  <table>
+    <thead>
+    <tr>
+      <th>Week Starting</th>
+      <th>Rate at Start of Week</th>
+      <th>Rate at End of Week</th>
+      <th>Change</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% changes.each do |week_start, rates| %>
+      <tr>
+        <td><%= week_start %></td>
+        <td><%= rates[:start_of_week].round(2) %></td>
+        <td><%= rates[:end_of_week].round(2) %></td>
+        <td><%= (rates[:end_of_week] - rates[:start_of_week]).round(2) %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+<% end %>
+<%= link_to 'Back to Main Page', currency_rates_path %>

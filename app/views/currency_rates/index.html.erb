@@ -1,0 +1,7 @@
+<h1>Currency Rates for the Last Month</h1>
+
+<div  data-controller="currency-rates" id="chart"
+     data-currency-rates-chart-data-value="<%= @chart_data.to_json %>">
+</div>
+
+<%= link_to 'Weekly Change', weekly_change_currency_rates_path %>
