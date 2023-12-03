@@ -83,7 +83,6 @@ GEM
     bootsnap (1.17.0)
       msgpack (~> 1.2)
     builder (3.2.4)
-    byebug (11.1.3)
     capybara (3.39.2)
       addressable
       matrix
@@ -175,6 +174,10 @@ GEM
       activesupport (= 7.1.2)
       bundler (>= 1.15.0)
       railties (= 7.1.2)
+    rails-controller-testing (1.0.5)
+      actionpack (>= 5.0.1.rc1)
+      actionview (>= 5.0.1.rc1)
+      activesupport (>= 5.0.1.rc1)
     rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
@@ -205,7 +208,7 @@ GEM
     rspec-mocks (3.12.6)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
-    rspec-rails (6.0.4)
+    rspec-rails (6.1.0)
       actionpack (>= 6.1)
       activesupport (>= 6.1)
       railties (>= 6.1)
@@ -259,7 +262,6 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  byebug (~> 11.1)
   capybara
   debug
   importmap-rails
@@ -268,7 +270,8 @@ DEPENDENCIES
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.2)
-  rspec-rails (~> 6.0.0)
+  rails-controller-testing
+  rspec-rails (~> 6.1.0)
   selenium-webdriver
   sprockets-rails
   stimulus-rails

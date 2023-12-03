@@ -24,7 +24,7 @@ class CurrencyRatesController < ApplicationController
 
 
     @chart_data = {
-      x: dates.map(&:to_s),
+      x:   ['date'].concat(dates.map(&:to_s)),
       usd: ['USD'].concat(usd_rates),
       eur: ['EUR'].concat(eur_rates),
       cny: ['CNY'].concat(cny_rates)

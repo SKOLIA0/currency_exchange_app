@@ -1,7 +1,6 @@
 require 'net/http'
 require 'json'
 require 'nokogiri'
-require 'byebug'
 require 'open-uri'
 
 class CurrencyRate < ApplicationRecord

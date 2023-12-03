@@ -15,17 +15,14 @@ export default class extends Controller {
 
     initializeChart() {
         const chartData = this.chartDataValue;
-
-        // Проверка данных в консоли
-        console.log("ChartData:", chartData);
-
+        // console.log("ChartDataX:", chartData.x);
         if (document.getElementById('chart')) {
-            c3.generate({
-                // bindto: '#chart',
+          c3.generate({
+                bindto: '#chart',
                 data: {
-                    x: 'x',
+                    x: 'date',
                     columns: [
-                        ['x'].concat(chartData.x),
+                        chartData.x,
                         chartData.usd,
                         chartData.eur,
                         chartData.cny
