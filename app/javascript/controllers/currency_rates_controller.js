@@ -19,10 +19,9 @@ export default class extends Controller {
         // Проверка данных в консоли
         console.log("ChartData:", chartData);
 
-        // Убедитесь, что элемент для графика существует
         if (document.getElementById('chart')) {
             c3.generate({
-                bindto: '#chart',
+                // bindto: '#chart',
                 data: {
                     x: 'x',
                     columns: [

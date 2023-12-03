@@ -5,7 +5,7 @@ require 'date'
 # Метод для извлечения данных о валютных курсах за указанный период
 def fetch_currency_rates_for_last_month
   end_date = Date.today
-  start_date = end_date - 1.month
+  start_date = end_date.prev_month
   fetch_currency_rates(start_date, end_date)
 end
 
