@@ -1,5 +1,4 @@
 # Currency Exchange App
-
 ### Описание
 Это приложение Ruby on Rails для отслеживания и отображения курсов валютных обменов.
 
@@ -16,25 +15,39 @@
    ```bash
    cd currency_exchange_app
    ```
-3. Создать базу данных:
+3. Выполнить установку зависимостей:
+   ```bash
+   bundle install
+   ```
+4. Создать базу данных:
    ```bash
    rails db:create
    ```
-4. Выполнить миграцию базы данных:
+5. Выполнить миграцию базы данных:
    ```bash
    rails db:migrate
    ```
-5. Генерировать тестовые данные (запустить скрипт `generate_seeds.rb`):
+6. Генерировать тестовые данные (запустить скрипт `generate_seeds.rb`):
    ```bash
    ruby generate_seeds.rb
    ```
-6. Заполнить базу данных:
+7. Заполнить базу данных:
    ```bash
    rails db:seed
    ```
-7. Запустить сервер Rails:
+8. Запустить сервер Rails:
    ```bash
    rails server
+   ```
+
+### Автоматизированные задачи с помощью Whenever
+1. Обновить файл crontab, чтобы включить определенные задачи:
+   ```bash
+   bundle exec whenever --update-crontab
+   ```
+2. Проверить запланированные задачи:
+   ```bash
+   crontab -l
    ```
 
 ### Description
@@ -53,23 +66,37 @@ This is a Ruby on Rails application for tracking and displaying currency exchang
    ```bash
    cd currency_exchange_app
    ```
-3. Create the database:
+3. Install dependencies:
+   ```bash
+   bundle install
+   ```
+4. Create the database:
    ```bash
    rails db:create
    ```
-4. Migrate the database:
+5. Migrate the database:
    ```bash
    rails db:migrate
    ```
-5. Generate seed data (run the script `generate_seeds.rb`):
+6. Generate seed data (run the script `generate_seeds.rb`):
    ```bash
    ruby generate_seeds.rb
    ```
-6. Seed the database:
+7. Seed the database:
    ```bash
    rails db:seed
    ```
-7. Start the Rails server:
+8. Start the Rails server:
    ```bash
    rails server
+   ```
+
+### Automated Tasks with Whenever
+1. Update the crontab file to include the defined tasks:
+   ```bash
+   bundle exec whenever --update-crontab
+   ```
+2. Verify the scheduled tasks:
+   ```bash
+   crontab -l
    ```

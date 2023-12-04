@@ -1,4 +1,3 @@
-# spec/controllers/currency_rates_controller_spec.rb
 require 'rails_helper'
 
 RSpec.describe CurrencyRatesController, type: :controller do
